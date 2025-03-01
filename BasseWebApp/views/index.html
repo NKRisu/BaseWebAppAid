@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This is all just very basic HTML setup lines, characters, scale, allowable width and so on. Nothing on "head" portion will need to be changed. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <!-- This refers to the styling file, which will be the CSS file. Route to it is defined here. -->
+    <link rel="stylesheet" href="/static/styles.css">
+    <!-- This refers to the code page that relates to this specific HTML webpage. -->
+    <script defer src="/static/indexPage.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Index Page</h1>
+    </header>
+    <!-- Simple navigation bar with couple link buttons. CSS file dictates their hover and on-click colours. -->
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/secondIndexPage">Second Index Page</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>This is the main content area of the Index Page. Add your content here.</p>
+        <!-- Generally you want to use <div> content <div/> to separate content within a block within body block. Below is an example of this. -->
+        <!-- This is how you would use <div> content <div/>, in here it is used to create a container for some content you may want. -->
+        <!-- You may reuse "container" class, create new container classes or any other classes and keep adding tons of divisions.  -->
+        <div class="container">
+            <p>This is the main content area of the Index Page within a container. Add your containerized content in here.</p>
+        </div>
+        <div>
+            <!-- Example of the "cool" checkbox made in CSS file. -->
+            <input type="checkbox" id="TestCheckBox" name="CheckBox">
+            <label for="TestCheckBox">Check me!:</label>
+            <!-- Placeholder for the mock-functionality defined in indexPage.js -->
+            <p id="checkboxMessage" style="display: none;">Checkbox is checked!</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; NKRisu on GitHub 2025</p>
+    </footer>
+</body>
+</html>
